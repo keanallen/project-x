@@ -16,8 +16,8 @@ jobs:
       - name: Upload files to Website
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          server: 194.233.67.43:21
+          username: gh-action-px
+          password: s8cikGpfPN7tHSh2
           local-dir: ./
           exclude: ".git*"
