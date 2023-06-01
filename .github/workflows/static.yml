@@ -28,4 +28,4 @@ jobs:
     steps:
       - name: Check website content
         run: |
-          grep "website working" index.html
+          curl https://project-x.lightbulb.com.ph | grep "website working"
