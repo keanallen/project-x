@@ -16,7 +16,7 @@ jobs:
       - name: Upload files to Website
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: 194.233.67.43:21
+          server: 194.233.67.43
           username: gh-action-px
           password: s8cikGpfPN7tHSh2
           local-dir: ./
