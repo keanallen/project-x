@@ -21,3 +21,11 @@ jobs:
           password: s8cikGpfPN7tHSh2
           local-dir: ./
           exclude: ".git*"
+
+  test-website:
+    needs: deploy-to-live-server
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check website content
+        run: |
+          grep "website working" index.html
